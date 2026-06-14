@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="2m-13YbCXHiyeKmPHQ4z">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Users" vertex="1">
+          <mxGeometry height="140" width="160" x="130" y="40" as="geometry">
+            <mxRectangle height="50" width="80" x="130" y="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-2" parent="I_18yqT5WXfBUysPTBzQ-1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="user_id(PK)&lt;div&gt;full_name&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;role&lt;/div&gt;&lt;div&gt;phone_number&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Booking" vertex="1">
+          <mxGeometry height="180" width="160" x="370" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-6" parent="I_18yqT5WXfBUysPTBzQ-5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="booking_id(PK)&lt;div&gt;user_id(FK)&lt;/div&gt;&lt;div&gt;match_id(FK)&lt;/div&gt;&lt;div&gt;seat_number&lt;/div&gt;&lt;div&gt;payment_status&lt;/div&gt;&lt;div&gt;total_cost&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-7" edge="1" parent="1" source="I_18yqT5WXfBUysPTBzQ-18" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;curved=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0.017;exitY=0.165;exitDx=0;exitDy=0;exitPerimeter=0;" target="I_18yqT5WXfBUysPTBzQ-6" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="775" y="200" as="sourcePoint" />
+            <mxPoint x="445" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-17" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" value="Matches" vertex="1">
+          <mxGeometry height="160" width="160" x="600" y="40" as="geometry">
+            <mxRectangle height="50" width="80" x="130" y="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-18" parent="I_18yqT5WXfBUysPTBzQ-17" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="match_id(PK)&lt;div&gt;fixture&lt;/div&gt;&lt;div&gt;tournament_category&lt;/div&gt;&lt;div&gt;base_ticket_price&lt;/div&gt;&lt;div&gt;match_status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I_18yqT5WXfBUysPTBzQ-20" edge="1" parent="1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;curved=0;entryX=0;entryY=0.205;entryDx=0;entryDy=0;entryPerimeter=0;" target="I_18yqT5WXfBUysPTBzQ-6" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="287" y="100" as="sourcePoint" />
+            <mxPoint x="360" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
